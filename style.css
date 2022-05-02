@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2e405c ;
+}
+
+::selection {
+    color: #222;
+    background: #5be8f9;
+}
+
+.scroll-icon {
+    transform: translate(-50%, 0%);
+    animation: fade_move_down 2s ease-in-out infinite;
+}
+
+#scroll {
+    bottom: 5vh;
+    position: absolute;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+    
+}
+
+.container {
+    max-width: 1024px;
+}
