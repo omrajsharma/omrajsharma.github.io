@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #5be8f9;
+    --secondary-color: #2e405c;
+}
+
 *{
     margin: 0;
 }
@@ -46,4 +51,20 @@ body::-webkit-scrollbar-thumb
 
 .container {
     max-width: 1024px;
+}
+
+/* Scroll progress bar */
+header {
+    position: fixed;
+    top: 0;
+    background-color: var(--secondary-color);
+    width: 100vw;
+}
+.scroll-container {
+    width: 100%;
+}
+.scroll-bar {
+    width: 0%;
+    display: inline-block;
+    background-color: var(--primary-color);
 }
